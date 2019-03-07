@@ -1,6 +1,6 @@
 [package]
 
-name = "eth-secp256k1"
+name = "secp256k1"
 version = "0.5.7"
 authors = [ "Dawid Ciężarkiewicz <dpc@ucore.info>",
             "Andrew Poelstra <apoelstra@wpsoftware.net>" ]
