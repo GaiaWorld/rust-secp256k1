@@ -27,7 +27,7 @@ void print_number(double x) {
         y *= 10.0;
         c++;
     }
-    printf("%.*f", c, x);
+    //printf("%.*f", c, x);
 }
 
 void run_benchmark(char *name, void (*benchmark)(void*), void (*setup)(void*), void (*teardown)(void*), void* data, int count, int iter) {
@@ -54,13 +54,13 @@ void run_benchmark(char *name, void (*benchmark)(void*), void (*setup)(void*), v
         }
         sum += total;
     }
-    printf("%s: min ", name);
+    //printf("%s: min ", name);
     print_number(min * 1000000.0 / iter);
-    printf("us / avg ");
+    //printf("us / avg ");
     print_number((sum / count) * 1000000.0 / iter);
-    printf("us / max ");
+    //printf("us / max ");
     print_number(max * 1000000.0 / iter);
-    printf("us\n");
+    //printf("us\n");
 }
 
 #endif /* SECP256K1_BENCH_H */
